@@ -1,0 +1,27 @@
+harish@harish-c-s:~/Programming/split$ vim split-base.c 
+harish@harish-c-s:~/Programming/split$ gcc split-base.c -o test-split
+harish@harish-c-s:~/Programming/split$ ./test-split test-file.txt 
+ 
+ Size of File in  Kilo Bytes : 21.40kB 
+
+The Number of Lines in the File is 1001
+
+ Enter 1 To Split File Based on Size   
+ Enter 2 To Split File Based on Lines : 1
+
+ How Much kilobytes Each Files must be splitted based on ? 
+ Example : Enter 2kB as 2  
+ Enter Now :2
+
+Now You can use ls command to view the text files in terminal
+harish@harish-c-s:~/Programming/split$ ls
+0000-test-file.txt  0004-test-file.txt  0008-test-file.txt  split-base.c   write-text.c
+0001-test-file.txt  0005-test-file.txt  0009-test-file.txt  test-file.txt  xaa
+0002-test-file.txt  0006-test-file.txt  0010-test-file.txt  test-split     xab
+0003-test-file.txt  0007-test-file.txt  split               write
+harish@harish-c-s:~/Programming/split$ rm -rf *-test-file.txt
+harish@harish-c-s:~/Programming/split$ ls
+split  split-base.c  test-file.txt  test-split  write  write-text.c  xaa  xab
+harish@harish-c-s:~/Programming/split$ 
+
+
